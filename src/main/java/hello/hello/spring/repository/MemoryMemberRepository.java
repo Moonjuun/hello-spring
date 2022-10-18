@@ -1,6 +1,7 @@
 package hello.hello.spring.repository;
 
 import hello.hello.spring.domain.Member;
+import org.junit.jupiter.api.AfterEach;
 
 import java.util.*;
 
@@ -39,4 +40,9 @@ public class MemoryMemberRepository implements MemberRepository {
         return new ArrayList<>(store.values());
 //        store.values() 반환, Member들이 반환이 된다
     }
+
+    public void clearStore() {
+        store.clear();
+    }
+    //테스트가 끝나면 메모리 삭제
 }
