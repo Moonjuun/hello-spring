@@ -2,6 +2,7 @@ package hello.hello.spring.repository;
 
 import hello.hello.spring.domain.Member;
 import org.junit.jupiter.api.AfterEach;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
